@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhancement Three: Databases</title>
+</head>
+<body>
+  <h1>Enhancement Three: Databases</h1>
+
+  <p><a href="index.html">Back to Home</a></p>
+
+  <h2>Artifact</h2>
+  <p>
+    The artifact selected for this enhancement is <strong>CRUD_Python_Module.py</strong>, 
+    a Python module originally created in CS340: Client/Server Development.
+  </p>
+
+  <h2>Overview</h2>
+  <p>
+    This module provides database access for an animal shelter dashboard
+    application. It connects to MongoDB using PyMongo and supports create,
+    read, update, and delete operations through the <strong>AnimalShelter</strong>
+    class.
+  </p>
+
+  <h2>Enhancements Made</h2>
+  <ul>
+    <li>Removed leftover test code that did not support the main module.</li>
+    <li>Added database connection verification using a MongoDB ping command.</li>
+    <li>Added an <strong>is_connected()</strong> helper method to prevent operations without an active connection.</li>
+    <li>Updated CRUD methods to fail safely when the database is unavailable.</li>
+    <li>Replaced broad exception handling with database-specific <strong>PyMongoError</strong> handling.</li>
+    <li>Improved validation before create, read, update, and delete operations.</li>
+    <li>Added optional projection support to the <strong>read()</strong> method.</li>
+  </ul>
+
+  <h2>Course Outcomes</h2>
+  <p>
+    This enhancement supports Course Outcome 4 by improving a database access
+    layer using Python, MongoDB, and PyMongo. It also supports Course Outcome 3 
+    because the enhancement required evaluating the original module and improving
+    how it handles connection failures, invalid input, and database errors. 
+    Course Outcome 5 is also supported through safer validation, connection checks,
+    and protection against unintended delete operations.
+  </p>
+
+  <h2>Files</h2>
+  <ul>
+    <li><a href="CWarner_EnhancementThree_CodeFiles.zip">Download Code Files</a></li>
+    <li><a href="CWarner_EnhancementThree_Narrative.docx">Download Narrative</a></li>
+  </ul>
+</body>
+</html>
