@@ -6,10 +6,39 @@
 <body>
     <h1>Cody Warner CS 499 ePortfolio</h1>
 
-    <p>
-    This portfolio showcases my work from the Computer Science program,
-    including enhancements in software design and engineering, algorithms
-    and data structures, and databases.
+    <h2>Professional Self-Assessment</h2>
+    <p>When I started this program, I figured computer science meant becoming a software developer, since that felt like the obvious path for the degree. The more courses and projects I worked through, 
+        the more I realized my actual interests were spread across systems, networks, databases, and troubleshooting rather than just writing application code. That shift is part of why my goal now is 
+        to start out in an entry-level IT role and work toward cybersecurity from there. This ePortfolio reflects that direction, even though the artifacts themselves come from a mix of different course areas.
+        <br>
+        Communication ended up being a bigger part of this program than I expected going in. The capstone code review had me looking at existing code in a structured way and explaining what worked, what 
+        needed improvement, and why certain enhancements made sense. That is close to what a real code review looks like in a team environment, where the goal is not just to point out problems, but to help
+        other people understand the reasoning behind technical decisions. That kind of explaining also carried over into a full-stack web project I worked on for CS465, where I had to document system architecture, 
+        API endpoints, and design constraints in a way that someone else on the project could follow without me standing over their shoulder explaining it. Being able to write that kind of documentation,
+        not just working code, is something I expect to rely on constantly in IT and security work, where you are often explaining a problem or a fix to someone who does not have the same technical background you 
+        do.
+        <br>
+        Software engineering and quality assurance came up directly in a CS320 project where I wrote unit tests for a contact, task, and appointment management system. I focused on pairing every valid case with 
+        an invalid one, used boundary testing for things like character limits, and ran coverage analysis with EclEmma to see how much of the code my tests actually exercised. That project pushed me to think less 
+        like someone just trying to get a feature to work and more like someone trying to prove where it could break. That is a mindset I carried into the capstone enhancements as well.
+        <br>
+        Security is the area that grew the most for me outside of the three capstone artifacts. In a secure coding project for CS305, I added SHA-256 checksum verification to confirm data had not been tampered with during 
+        transfer, set up a self-signed certificate to run the application over HTTPS, and ran an OWASP dependency check to make sure the changes did not introduce new vulnerabilities. That project is where defensive thinking 
+        really started clicking for me, and it shows up again in the capstone artifacts through things like input validation, delete confirmation, and database connection checks. These changes are practical security-focused
+        improvements, and they reflect the same question I come back to: what could go wrong, and how should the system respond when it does? 
+        <br>
+        Data structures and algorithms is the area most directly represented in the capstone, but it also came up earlier in a checkers AI project where I had to evaluate different move-selection approaches and decide 
+        between a rule-based filtering system and a scoring-based heuristic. Choosing the right approach for the problem rather than just the first one that came to mind is the same kind of thinking that went into picking 
+        a HashMap over a List for the log analyzer enhancement in this capstone. 
+        <br>
+        The three artifacts in this ePortfolio bring a lot of that together in one place. The software design and engineering artifact is an Android weight tracking app where I cleaned up repeated
+        validation logic, added a delete confirmation step, and fixed how dates were sorted. The algorithms and data structures artifact is a Java log analysis program that I rebuilt to count and flag suspicious login
+        activity using a HashMap instead of just printing raw text. The database artifact is a Python module that connects to MongoDB, where I added connection verification and safer error handling so the system fails
+        predictably instead of crashing outright. Individually, they each show a different piece of computer science. Together, they show that I can take something that already works and make it more reliable, more
+        maintainable, and harder to break, which is the same kind of work I expect to be doing once I am in an IT or security role. 
+        <br>
+        This program gave me a real foundation in programming, testing, databases, and security, even though my path is heading toward IT and cybersecurity rather than straight software development. If anything, 
+        understanding how applications and systems are actually built makes it easier to understand how they break and how to protect them. This ePortfolio is meant to show that foundation along with the direction I am taking it.
     </p>
 
     <h2>Enhancements</h2>
