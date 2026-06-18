@@ -2,52 +2,195 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Enhancement Two: Algorithms and Data Structures</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  
+<style>
+  body {
+    margin: 0;
+    background: #f5f5f3;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  h1, h2 {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #1c2b2a;
+  }
+
+  a {
+    color: #2f6f62;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .wrap {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  header.hero {
+    padding: 50px 0 40px;
+    border-bottom: 3px solid #2f6f62;
+  }
+
+  header.hero h1 {
+    font-size: 2rem;
+    margin: 0 0 12px;
+  }
+
+  header.hero p.back {
+    margin-top: 18px;
+  }
+
+  section {
+    padding: 35px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  section h2 {
+    margin-bottom: 16px;
+    border-left: 4px solid #2f6f62;
+    padding-left: 10px;
+  }
+
+  .content-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 26px 30px;
+  }
+  .content-card p {
+    margin: 0;
+  }
+  .content-card ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .content-card li {
+    margin-bottom: 10px;
+  }
+  .content-card li:last-child {
+    margin-bottom: 0;
+  }
+
+  .files-box {
+    background: #1f2a33;
+    border-radius: 6px;
+    padding: 26px 30px;
+  }
+  .files-box a.file-link {
+    display: inline-block;
+    background: #2f6f62;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    margin: 0 10px 10px 0;
+  }
+  .files-box a.file-link:hover {
+    background: #265a4f;
+    text-decoration: none;
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px 0;
+    color: #777;
+    font-size: 0.85rem;
+  }
+</style>
 </head>
+
+  
 <body>
-  <h1>Enhancement Two: Algorithms and Data Structures</h1>
+  <header class="hero">
+    <div class="wrap">
+      <h1>Enhancement Two: Algorithms and Data Structures</h1>
+      <p class="back"><a href="index.html">← Back to Home</a></p>
+    </div>
+  </header>
 
-  <p><a href="index.html">Back to Home</a></p>
+  <section id="artifact">
+    <div class="wrap">
+      <h2>Artifact</h2>
+      <div class="content-card">
+        <p>
+          The artifact selected for this enhancement is <strong>LogAnalyzer.java</strong>,
+          a standalone Java program created to practice file input and basic data storage.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Artifact</h2>
-  <p>
-    The artifact selected for this enhancement is <strong>LogAnalyzer.java</strong>,
-    a standalone Java program created to practice file input and basic data storage.
-  </p>
+  <section id="overview">
+    <div class="wrap">
+      <h2>Overview</h2>
+      <div class="content-card">
+        <p>
+          The original version of the program read log entries from a text file,
+          stored each line in a list, and printed the raw log data to the console.
+          For this enhancement, I expanded the program into a log analysis tool that
+          processes structured log data and identifies failed login patterns.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Overview</h2>
-  <p>
-    The original version of the program read log entries from a text file,
-    stored each line in a list, and printed the raw log data to the console.
-    For this enhancement, I expanded the program into a log analysis tool that
-    processes structured log data and identifies failed login patterns.
-  </p>
+  <section id="enhancements">
+    <div class="wrap">
+      <h2>Enhancements Made</h2>
+      <div class="content-card">
+        <ul>
+          <li>Added parsing logic to separate IP addresses and event types.</li>
+          <li>Filtered log entries to focus on failed login attempts.</li>
+          <li>Used a HashMap to count failed attempts by IP address.</li>
+          <li>Converted HashMap entries into a sortable list.</li>
+          <li>Sorted results from highest to lowest failed attempt count.</li>
+          <li>Flagged IP addresses that met or exceeded the suspicious threshold.</li>
+          <li>Printed a summary report with total failed attempts.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <h2>Enhancements Made</h2>
-  <ul>
-    <li>Added parsing logic to separate IP addresses and event types.</li>
-    <li>Filtered log entries to focus on failed login attempts.</li>
-    <li>Used a HashMap to count failed attempts by IP address.</li>
-    <li>Converted HashMap entries into a sortable list.</li>
-    <li>Sorted results from highest to lowest failed attempt count.</li>
-    <li>Flagged IP addresses that met or exceeded the suspicious threshold.</li>
-    <li>Printed a summary report with total failed attempts.</li>
-  </ul>
+  <section id="outcomes">
+    <div class="wrap">
+      <h2>Course Outcomes</h2>
+      <div class="content-card">
+        <p>
+          This enhancement supports Course Outcome 3 by applying algorithmic thinking
+          and data structure choices to solve a log analysis problem. It also supports
+          Course Outcome 4 because the enhanced program produces a more useful summary
+          report instead of only displaying raw file contents. There is also a light
+          connection to Course Outcome 5 because the program identifies suspicious
+          login patterns.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Course Outcomes</h2>
-  <p>
-    This enhancement supports Course Outcome 3 by applying algorithmic thinking
-    and data structure choices to solve a log analysis problem. It also supports
-    Course Outcome 4 because the enhanced program produces a more useful summary
-    report instead of only displaying raw file contents. There is also a light
-    connection to Course Outcome 5 because the program identifies suspicious
-    login patterns.
-  </p>
+  <section id="files">
+    <div class="wrap">
+      <h2>Files</h2>
+      <div class="files-box">
+        <a class="file-link" href="CWarner_EnhancementTwo_CodeFiles.zip">Download Code Files</a>
+        <a class="file-link" href="CWarner_EnhancementTwo_Narrative.docx">Download Narrative</a>
+      </div>
+    </div>
+  </section>
 
-  <h2>Files</h2>
-  <ul>
-    <li><a href="CWarner_EnhancementTwo_CodeFiles.zip">Download Code Files</a></li>
-    <li><a href="CWarner_EnhancementTwo_Narrative.docx">Download Narrative</a></li>
-  </ul>
+  <footer>
+    <div class="wrap">
+      <p>Cody Warner · SNHU CS 499 Capstone</p>
+    </div>
+  </footer>
+
 </body>
 </html>
