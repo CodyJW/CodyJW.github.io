@@ -1,75 +1,329 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cody Warner ePortfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cody Warner — CS 499 ePortfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+
+  body {
+    margin: 0;
+    background: #f5f5f3;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #1c2b2a;
+  }
+
+  a {
+    color: #2f6f62;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .wrap {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  nav {
+    background: #1f2a33;
+    padding: 14px 0;
+  }
+  nav .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .nav-name {
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+  nav .nav-links a {
+    color: #cfd6d4;
+    margin-left: 18px;
+    font-size: 0.9rem;
+  }
+  nav .nav-links a:hover {
+    color: #fff;
+  }
+
+  header.hero {
+    padding: 50px 0 40px;
+    border-bottom: 3px solid #2f6f62;
+  }
+
+  header.hero p.eyebrow {
+    color: #2f6f62;
+    font-weight: bold;
+    margin: 0 0 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+
+  header.hero h1 {
+    font-size: 2.3rem;
+    margin: 0 0 12px;
+  }
+
+  header.hero p.role {
+    color: #444;
+    max-width: 600px;
+  }
+
+  .pillars {
+    margin-top: 22px;
+  }
+  .pillars a {
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px 14px;
+    margin: 0 8px 8px 0;
+    font-size: 0.9rem;
+    color: #1c2b2a;
+  }
+  .pillars a:hover {
+    border-color: #2f6f62;
+    text-decoration: none;
+  }
+
+  section {
+    padding: 45px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  section h2 {
+    margin-bottom: 20px;
+    border-left: 4px solid #2f6f62;
+    padding-left: 10px;
+  }
+
+  .assessment-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 30px;
+  }
+  .assessment-card p {
+    margin: 0 0 18px;
+  }
+  .assessment-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .review-box {
+    background: #1f2a33;
+    color: #fff;
+    border-radius: 6px;
+    padding: 26px 30px;
+  }
+  .review-box p {
+    color: #cfd6d4;
+    margin: 0 0 16px;
+  }
+  .review-box a.btn {
+    display: inline-block;
+    background: #2f6f62;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-size: 0.95rem;
+  }
+  .review-box a.btn:hover {
+    background: #265a4f;
+    text-decoration: none;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 22px;
+    flex: 1 1 240px;
+    display: block;
+  }
+  .card:hover {
+    border-color: #2f6f62;
+    text-decoration: none;
+  }
+  .card .tag {
+    color: #2f6f62;
+    font-size: 0.78rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .card h3 {
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+  }
+  .card p {
+    color: #555;
+    font-size: 0.88rem;
+    margin: 0 0 14px;
+  }
+  .card .go {
+    color: #2f6f62;
+    font-size: 0.85rem;
+    font-weight: bold;
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px 0;
+    color: #777;
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 700px) {
+    .cards { flex-direction: column; }
+  }
+
+</style>
 </head>
 <body>
-    <h1>Cody Warner CS 499 ePortfolio</h1>
 
-    <h2>Professional Self-Assessment</h2>
-    <p>
-        When I started this program, I figured computer science meant becoming a software developer, since that felt like the obvious path for the degree. The more courses and projects I worked through, 
-        the more I realized my actual interests were spread across systems, networks, databases, and troubleshooting rather than just writing application code. That shift is part of why my goal now is 
-        to start out in an entry-level IT role and work toward cybersecurity from there. This ePortfolio reflects that direction, even though the artifacts themselves come from a mix of different course areas.
-    </p>
-    
-    <p>
-        Communication ended up being a bigger part of this program than I expected going in. The capstone code review had me looking at existing code in a structured way and explaining what worked, what 
-        needed improvement, and why certain enhancements made sense. That is close to what a real code review looks like in a team environment, where the goal is not just to point out problems, but to help
-        other people understand the reasoning behind technical decisions. That kind of explaining also carried over into a full-stack web project I worked on for CS465, where I had to document system architecture, 
-        API endpoints, and design constraints in a way that someone else on the project could follow without me standing over their shoulder explaining it. Being able to write that kind of documentation,
-        not just working code, is something I expect to rely on constantly in IT and security work, where you are often explaining a problem or a fix to someone who does not have the same technical background you 
-        do.
-    </p>
+  <nav>
+    <div class="wrap">
+      <span class="nav-name">Cody Warner</span>
+      <span class="nav-links">
+        <a href="#assessment">Self-Assessment</a>
+        <a href="#review">Code Review</a>
+        <a href="#enhancements">Enhancements</a>
+      </span>
+    </div>
+  </nav>
 
-    <p>
-        Software engineering and quality assurance came up directly in a CS320 project where I wrote unit tests for a contact, task, and appointment management system. I focused on pairing every valid case with 
-        an invalid one, used boundary testing for things like character limits, and ran coverage analysis with EclEmma to see how much of the code my tests actually exercised. That project pushed me to think less 
-        like someone just trying to get a feature to work and more like someone trying to prove where it could break. That is a mindset I carried into the capstone enhancements as well.
-    </p>
-        
-    <p>
-        Security is the area that grew the most for me outside of the three capstone artifacts. In a secure coding project for CS305, I added SHA-256 checksum verification to confirm data had not been tampered with during 
-        transfer, set up a self-signed certificate to run the application over HTTPS, and ran an OWASP dependency check to make sure the changes did not introduce new vulnerabilities. That project is where defensive thinking 
-        really started clicking for me, and it shows up again in the capstone artifacts through things like input validation, delete confirmation, and database connection checks. These changes are practical security-focused
-        improvements, and they reflect the same question I come back to: what could go wrong, and how should the system respond when it does? 
-    </p>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">CS 499 · Computer Science Capstone</p>
+      <h1>Cody Warner</h1>
+      <p class="role">A capstone ePortfolio built around three enhanced artifacts, showing the path from existing code to something more reliable, maintainable, and secure, as I work toward a career in IT and cybersecurity.</p>
 
-    <p>
-        Data structures and algorithms is the area most directly represented in the capstone, but it also came up earlier in a checkers AI project where I had to evaluate different move-selection approaches and decide 
-        between a rule-based filtering system and a scoring-based heuristic. Choosing the right approach for the problem rather than just the first one that came to mind is the same kind of thinking that went into picking 
-        a HashMap over a List for the log analyzer enhancement in this capstone. 
-    </p>
+      <div class="pillars">
+        <a href="enhancement-one.html">Software Design &amp; Engineering</a>
+        <a href="enhancement-two.html">Algorithms &amp; Data Structures</a>
+        <a href="enhancement-three.html">Databases</a>
+      </div>
+    </div>
+  </header>
 
-    <p>
-        The three artifacts in this ePortfolio bring a lot of that together in one place. The software design and engineering artifact is an Android weight tracking app where I cleaned up repeated
-        validation logic, added a delete confirmation step, and fixed how dates were sorted. The algorithms and data structures artifact is a Java log analysis program that I rebuilt to count and flag suspicious login
-        activity using a HashMap instead of just printing raw text. The database artifact is a Python module that connects to MongoDB, where I added connection verification and safer error handling so the system fails
-        predictably instead of crashing outright. Individually, they each show a different piece of computer science. Together, they show that I can take something that already works and make it more reliable, more
-        maintainable, and harder to break, which is the same kind of work I expect to be doing once I am in an IT or security role. 
-    </p>
+  <section id="assessment">
+    <div class="wrap">
+      <h2>Professional Self-Assessment</h2>
 
-    <p>
-        This program gave me a real foundation in programming, testing, databases, and security, even though my path is heading toward IT and cybersecurity rather than straight software development. If anything, 
-        understanding how applications and systems are actually built makes it easier to understand how they break and how to protect them. This ePortfolio is meant to show that foundation along with the direction I am taking it.
-    </p>
+      <div class="assessment-card">
+        <p>
+          When I started this program, I figured computer science meant becoming a software developer, since that felt like the obvious path for the degree. The more courses and projects I worked through,
+          the more I realized my actual interests were spread across systems, networks, databases, and troubleshooting rather than just writing application code. That shift is part of why my goal now is
+          to start out in an entry-level IT role and work toward cybersecurity from there. This ePortfolio reflects that direction, even though the artifacts themselves come from a mix of different course areas.
+        </p>
 
-    <h2>Code Review</h2>
-    <p>
-        Before completing the three enhancements, I recorded a code review that explains the original artifacts, areas for improvement, and the planned changes for each category.
-    </p>
-    <p>
-        <a href="https://youtu.be/6d4zSeCVllM">View Code Review Video</a>
-    </p>
+        <p>
+          Communication ended up being a bigger part of this program than I expected going in. The capstone code review had me looking at existing code in a structured way and explaining what worked, what
+          needed improvement, and why certain enhancements made sense. That is close to what a real code review looks like in a team environment, where the goal is not just to point out problems, but to help
+          other people understand the reasoning behind technical decisions. That kind of explaining also carried over into a full-stack web project I worked on for CS465, where I had to document system architecture,
+          API endpoints, and design constraints in a way that someone else on the project could follow without me standing over their shoulder explaining it. Being able to write that kind of documentation,
+          not just working code, is something I expect to rely on constantly in IT and security work, where you are often explaining a problem or a fix to someone who does not have the same technical background you
+          do.
+        </p>
 
-    
+        <p>
+          Software engineering and quality assurance came up directly in a CS320 project where I wrote unit tests for a contact, task, and appointment management system. I focused on pairing every valid case with
+          an invalid one, used boundary testing for things like character limits, and ran coverage analysis with EclEmma to see how much of the code my tests actually exercised. That project pushed me to think less
+          like someone just trying to get a feature to work and more like someone trying to prove where it could break. That is a mindset I carried into the capstone enhancements as well.
+        </p>
 
-    <h2>Enhancements</h2>
-    
-    <ul>
-        <li><a href="enhancement-one.html">Enhancement One: Software Design and Engineering</a></li>
-        <li><a href="enhancement-two.html">Enhancement Two: Algorithms and Data Structures</a></li>
-        <li><a href="enhancement-three.html">Enhancement Three: Databases</a></li>
-    </ul>
+        <p>
+          Security is the area that grew the most for me outside of the three capstone artifacts. In a secure coding project for CS305, I added SHA-256 checksum verification to confirm data had not been tampered with during
+          transfer, set up a self-signed certificate to run the application over HTTPS, and ran an OWASP dependency check to make sure the changes did not introduce new vulnerabilities. That project is where defensive thinking
+          really started clicking for me, and it shows up again in the capstone artifacts through things like input validation, delete confirmation, and database connection checks. These changes are practical security-focused
+          improvements, and they reflect the same question I come back to: what could go wrong, and how should the system respond when it does?
+        </p>
+
+        <p>
+          Data structures and algorithms is the area most directly represented in the capstone, but it also came up earlier in a checkers AI project where I had to evaluate different move-selection approaches and decide
+          between a rule-based filtering system and a scoring-based heuristic. Choosing the right approach for the problem rather than just the first one that came to mind is the same kind of thinking that went into picking
+          a HashMap over a List for the log analyzer enhancement in this capstone.
+        </p>
+
+        <p>
+          The three artifacts in this ePortfolio bring a lot of that together in one place. The software design and engineering artifact is an Android weight tracking app where I cleaned up repeated
+          validation logic, added a delete confirmation step, and fixed how dates were sorted. The algorithms and data structures artifact is a Java log analysis program that I rebuilt to count and flag suspicious login
+          activity using a HashMap instead of just printing raw text. The database artifact is a Python module that connects to MongoDB, where I added connection verification and safer error handling so the system fails
+          predictably instead of crashing outright. Individually, they each show a different piece of computer science. Together, they show that I can take something that already works and make it more reliable, more
+          maintainable, and harder to break, which is the same kind of work I expect to be doing once I am in an IT or security role.
+        </p>
+
+        <p>
+          This program gave me a real foundation in programming, testing, databases, and security, even though my path is heading toward IT and cybersecurity rather than straight software development. If anything,
+          understanding how applications and systems are actually built makes it easier to understand how they break and how to protect them. This ePortfolio is meant to show that foundation along with the direction I am taking it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="review">
+    <div class="wrap">
+      <h2>Code Review</h2>
+
+      <div class="review-box">
+        <p>Before completing the three enhancements, I recorded a code review that explains the original artifacts, the areas for improvement, and the planned changes for each category.</p>
+        <a class="btn" href="https://youtu.be/6d4zSeCVllM">Watch the code review</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="enhancements">
+    <div class="wrap">
+      <h2>Enhancements</h2>
+
+      <div class="cards">
+
+        <a class="card" href="enhancement-one.html">
+          <h3>Software Design &amp; Engineering</h3>
+          <p>An Android weight-tracking app, refactored: centralized validation, a single grid-refresh method, and a delete confirmation dialog to prevent accidental data loss.</p>
+          <span class="go">View enhancement →</span>
+        </a>
+
+        <a class="card" href="enhancement-two.html">
+          <h3>Algorithms &amp; Data Structures</h3>
+          <p>A Java log analyzer rebuilt from a basic file reader into a tool that counts failed logins with a HashMap, sorts results, and flags suspicious IPs.</p>
+          <span class="go">View enhancement →</span>
+        </a>
+
+        <a class="card" href="enhancement-three.html">
+          <h3>Databases</h3>
+          <p>A Python MongoDB CRUD module hardened with connection verification, specific PyMongoError handling, and optional projection support on reads.</p>
+          <span class="go">View enhancement →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>Cody Warner · SNHU CS 499 Capstone</p>
+    </div>
+  </footer>
+
 </body>
 </html>
