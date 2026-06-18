@@ -1,53 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Enhancement Three: Databases</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enhancement Three: Databases</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+  body {
+    margin: 0;
+    background: #f5f5f3;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  h1, h2 {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #1c2b2a;
+  }
+
+  a {
+    color: #2f6f62;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .wrap {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  header.hero {
+    padding: 50px 0 40px;
+    border-bottom: 3px solid #2f6f62;
+  }
+
+  header.hero h1 {
+    font-size: 2rem;
+    margin: 0 0 12px;
+  }
+
+  header.hero p.back {
+    margin-top: 18px;
+  }
+
+  section {
+    padding: 35px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  section h2 {
+    margin-bottom: 16px;
+    border-left: 4px solid #2f6f62;
+    padding-left: 10px;
+  }
+
+  .content-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 26px 30px;
+  }
+  .content-card p {
+    margin: 0;
+  }
+  .content-card ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .content-card li {
+    margin-bottom: 10px;
+  }
+  .content-card li:last-child {
+    margin-bottom: 0;
+  }
+
+  .files-box {
+    background: #1f2a33;
+    border-radius: 6px;
+    padding: 26px 30px;
+  }
+  .files-box a.file-link {
+    display: inline-block;
+    background: #2f6f62;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    margin: 0 10px 10px 0;
+  }
+  .files-box a.file-link:hover {
+    background: #265a4f;
+    text-decoration: none;
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px 0;
+    color: #777;
+    font-size: 0.85rem;
+  }
+
+</style>
 </head>
+  
 <body>
-  <h1>Enhancement Three: Databases</h1>
 
-  <p><a href="index.html">Back to Home</a></p>
+  <header class="hero">
+    <div class="wrap">
+      <h1>Enhancement Three: Databases</h1>
+      <p class="back"><a href="index.html">← Back to Home</a></p>
+    </div>
+  </header>
 
-  <h2>Artifact</h2>
-  <p>
-    The artifact selected for this enhancement is <strong>CRUD_Python_Module.py</strong>, 
-    a Python module originally created in CS340: Client/Server Development.
-  </p>
+  <section id="artifact">
+    <div class="wrap">
+      <h2>Artifact</h2>
+      <div class="content-card">
+        <p>
+          The artifact selected for this enhancement is <strong>CRUD_Python_Module.py</strong>,
+          a Python module originally created in CS340: Client/Server Development.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Overview</h2>
-  <p>
-    This module provides database access for an animal shelter dashboard
-    application. It connects to MongoDB using PyMongo and supports create,
-    read, update, and delete operations through the <strong>AnimalShelter</strong>
-    class.
-  </p>
+  <section id="overview">
+    <div class="wrap">
+      <h2>Overview</h2>
+      <div class="content-card">
+        <p>
+          This module provides database access for an animal shelter dashboard
+          application. It connects to MongoDB using PyMongo and supports create,
+          read, update, and delete operations through the <strong>AnimalShelter</strong>
+          class.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Enhancements Made</h2>
-  <ul>
-    <li>Removed leftover test code that did not support the main module.</li>
-    <li>Added database connection verification using a MongoDB ping command.</li>
-    <li>Added an <strong>is_connected()</strong> helper method to prevent operations without an active connection.</li>
-    <li>Updated CRUD methods to fail safely when the database is unavailable.</li>
-    <li>Replaced broad exception handling with database-specific <strong>PyMongoError</strong> handling.</li>
-    <li>Improved validation before create, read, update, and delete operations.</li>
-    <li>Added optional projection support to the <strong>read()</strong> method.</li>
-  </ul>
+  <section id="enhancements">
+    <div class="wrap">
+      <h2>Enhancements Made</h2>
+      <div class="content-card">
+        <ul>
+          <li>Removed leftover test code that did not support the main module.</li>
+          <li>Added database connection verification using a MongoDB ping command.</li>
+          <li>Added an <strong>is_connected()</strong> helper method to prevent operations without an active connection.</li>
+          <li>Updated CRUD methods to fail safely when the database is unavailable.</li>
+          <li>Replaced broad exception handling with database-specific <strong>PyMongoError</strong> handling.</li>
+          <li>Improved validation before create, read, update, and delete operations.</li>
+          <li>Added optional projection support to the <strong>read()</strong> method.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <h2>Course Outcomes</h2>
-  <p>
-    This enhancement supports Course Outcome 4 by improving a database access
-    layer using Python, MongoDB, and PyMongo. It also supports Course Outcome 3 
-    because the enhancement required evaluating the original module and improving
-    how it handles connection failures, invalid input, and database errors. 
-    Course Outcome 5 is also supported through safer validation, connection checks,
-    and protection against unintended delete operations.
-  </p>
+  <section id="outcomes">
+    <div class="wrap">
+      <h2>Course Outcomes</h2>
+      <div class="content-card">
+        <p>
+          This enhancement supports Course Outcome 4 by improving a database access
+          layer using Python, MongoDB, and PyMongo. It also supports Course Outcome 3
+          because the enhancement required evaluating the original module and improving
+          how it handles connection failures, invalid input, and database errors.
+          Course Outcome 5 is also supported through safer validation, connection checks,
+          and protection against unintended delete operations.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Files</h2>
-  <ul>
-    <li><a href="CWarner_EnhancementThree_CodeFiles.zip">Download Code Files</a></li>
-    <li><a href="CWarner_EnhancementThree_Narrative.docx">Download Narrative</a></li>
-  </ul>
+  <section id="files">
+    <div class="wrap">
+      <h2>Files</h2>
+      <div class="files-box">
+        <a class="file-link" href="CWarner_EnhancementThree_CodeFiles.zip">Download Code Files</a>
+        <a class="file-link" href="CWarner_EnhancementThree_Narrative.docx">Download Narrative</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>Cody Warner · SNHU CS 499 Capstone</p>
+    </div>
+  </footer>
+
 </body>
 </html>
